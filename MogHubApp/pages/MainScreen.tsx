@@ -1,20 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView } from 'react-native/types_generated/index';
 
-export default function App() {
+function MainScreen() {
+
+  const [petName, setPetName] = useState('');
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View>
+      <SafeAreaView>
+        <ScrollView>
+          <Image style={styles.mogHubLogo}
+          source={require('../images/cat_logo.png')}/>
+        </ScrollView>
+      </SafeAreaView>
     </View>
+    
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
