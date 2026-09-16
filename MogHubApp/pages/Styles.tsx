@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
 
-    userInputtxt: {
+    userInputTxt: {
         borderBottomWidth: 1,
     },
 
