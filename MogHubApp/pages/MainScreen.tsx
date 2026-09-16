@@ -1,7 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, Image } from 'react-native';
 import { ScrollView } from 'react-native/types_generated/index';
+
+import styles from './Styles';
 
 function MainScreen() {
 
