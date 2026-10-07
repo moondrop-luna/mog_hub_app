@@ -1,9 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { SafeAreaView, Text, View, Image, TextInput, ScrollView } from 'react-native';
+import { SafeAreaView, Text, View, Image, TextInput, ScrollView, Button } from 'react-native';
 import { RadioButton } from 'react-native-paper'
 
-import styles from './Styles';
+import styles from '../pages/Styles';
 
 function MainScreen() {
 
@@ -12,7 +12,7 @@ function MainScreen() {
   const [selectedValue, setSelectedValue] = useState('0');
 
     const renderPets = () => {
-    const arrDisplay: [];
+    const arrDisplay = [];
 
     for (let i = 0; i < pet.length; i++) {
       arrDisplay.push(
@@ -24,6 +24,8 @@ function MainScreen() {
   
       );
     }
+    return arrDisplay;
+  };
 
   return (
     <View>
@@ -84,6 +86,16 @@ function MainScreen() {
             </View>
           </View>
 
+          <Button title="Add Pet"
+          onPress={() => {
+            setPet([...pet, petName]);
+            setPetName('');
+          }}
+          />
+
+          <View style={styles.petContainer}>
+            {renderPets()}
+          </View>
 
 
           <StatusBar style="auto" />

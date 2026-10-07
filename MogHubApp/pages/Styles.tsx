@@ -74,9 +74,25 @@ const styles = StyleSheet.create({
     },
 
     inputContainer: {
-        
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 25,
+        borderBottomWidth: 1,
+        borderBottomColor: '#ccc',
     },
 
+    petContainer: {
+        flex: 5,
+    },
+
+    petTxt: {
+        fontSize: 15,
+        marginVertical: 5,
+        borderBlockColor: '#ccc',
+        borderBottomWidth: 1,
+    },
 
 });
 
