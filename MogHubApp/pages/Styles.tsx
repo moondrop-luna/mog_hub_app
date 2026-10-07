@@ -94,6 +94,32 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
     },
 
+    bookingTxt: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        textAlign: 'center',
+    },
+
+    bookingSubTxt: {
+        fontSize: 15,
+        textAlign: 'center',
+        marginBottom: 10,
+    },
+
+    bookingImg: {
+        height: 200,
+        width: 200,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 10,
+    },
+
+    bookingContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
 });
 
 export default styles;
